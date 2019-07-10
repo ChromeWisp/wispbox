@@ -8,7 +8,8 @@
     "start:watch": "npm run build && npm-run-all --parallel start 'build -- -w'",
     "build": "rollup -c",
     "clean": "rm public/client.js* public/style.css*",
-    "test": "jest test"
+    "test": "jest test",
+    "ci": "npm-run-all test build"
   },
   "author": "",
   "license": "ISC",
