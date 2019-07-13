@@ -1,7 +1,12 @@
+<script>
+  import AboutMe from './AboutMe.svelte';
+</script>
+
 <main>
   <section class="intro-section">
     <p class="intro-text">I'm <strong class="name">Brendan Phillips</strong>, game designer and programmer!</p>
   </section>
+  <AboutMe />
 </main>
 
 <style>
