@@ -6,7 +6,7 @@
 
 <style>
   .about-me {
-    background: #484848;
+    background: #444444;
     color: #f7f7f7;
     padding: 6em;
   }

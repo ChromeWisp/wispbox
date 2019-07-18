@@ -1,17 +1,21 @@
 <section class="landing">
-  <p class="intro-text">I'm <strong class="name">Brendan Phillips</strong>, game designer and programmer!</p>
+  <p class="introduction">I'm <span class="atomic"><strong class="name">Brendan Phillips</strong>,</span> game designer and programmer.</p>
 </section>
 
 <style>
   .landing {
     position: relative;
-    background-color: #2F2B43B8;
+    background-color: rgba(25, 22, 34, 0.75);
     color: #fdfdfd;
-    height: 100vh;
+    height: 90vh;
+    font-size: 3em;
+    padding: 10vh 0.5em 0;
   }
 
   .landing::before {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     content: "";
@@ -23,13 +27,24 @@
     z-index: -1;
   }
 
-  .intro-text {
-    font-size: 3em;
-    padding: 2em;
+  .introduction {
+    text-align: center;
+    font-weight: 300;
   }
 
   .name {
     color: #51d4d5;
-    font-weight: normal;
+    font-weight: inherit;
+  }
+
+  .atomic {
+    display: inline-block;
+  }
+
+  @media (min-width: 1024px) {
+    .landing {
+      font-size: 5em;
+      padding-top: 20vh;
+    }
   }
 </style>
