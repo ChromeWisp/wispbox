@@ -9,7 +9,7 @@
     color: #fdfdfd;
     height: 90vh;
     font-size: 3em;
-    padding: 10vh 0.5em 0;
+    padding: 15vh 0.5em 0;
   }
 
   .landing::before {
