@@ -2,3 +2,5 @@
 
 /public/client.js*
 /public/style.css*
+
+.DS_Store
