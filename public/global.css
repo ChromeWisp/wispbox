@@ -1,3 +1,9 @@
+:root {
+  --color-teal: #51d4d5;
+  --color-grey: #444444;
+  --color-offwhite: #f7f7f7;
+}
+
 html {
   font-family: 'Josefin Sans', sans-serif;
 }

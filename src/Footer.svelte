@@ -13,17 +13,17 @@
     align-items: center;
     justify-content: center;
     padding: 4em 0;
-    background: #444444;
+    background: var(--color-grey);
   }
 
   .social-link {
-    color: #f7f7f7;
+    color: var(--color-offwhite);
     display: block;
     font-size: 1.5em;
     margin: 0 0.5em;
   }
 
   .social-link:hover {
-    color: #51d4d5;
+    color: var(--color-teal);
   }
 </style>

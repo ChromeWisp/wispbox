@@ -6,7 +6,7 @@
   .landing {
     position: relative;
     background-color: rgba(25, 22, 34, 0.75);
-    color: #fdfdfd;
+    color: var(--color-offwhite);
     height: 90vh;
     font-size: 3em;
     padding: 15vh 0.5em 0;
@@ -34,7 +34,7 @@
   }
 
   .name {
-    color: #51d4d5;
+    color: var(--color-teal);
     font-weight: inherit;
   }
 
