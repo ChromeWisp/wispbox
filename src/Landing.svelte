@@ -24,6 +24,7 @@
     background-position: center center;
     background-size: cover;
     image-rendering: crisp-edges;
+    image-rendering: pixelated;
     z-index: -1;
   }
 
