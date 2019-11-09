@@ -1,5 +1,5 @@
 <section class="landing">
-  <p class="introduction">I'm <span class="atomic"><strong class="name">Brendan Phillips</strong>,</span> game designer and programmer.</p>
+  <p class="introduction">I'm <span class="atomic"><em>Brendan Phillips</em>,</span> game designer and programmer.</p>
 </section>
 
 <style>
@@ -8,7 +8,7 @@
     background-color: rgba(25, 22, 34, 0.75);
     color: var(--color-offwhite);
     height: 90vh;
-    font-size: 3em;
+    font-size: 2.75em;
     padding: 15vh 0.5em 0;
   }
 
@@ -33,18 +33,13 @@
     font-weight: 300;
   }
 
-  .name {
-    color: var(--color-teal);
-    font-weight: inherit;
-  }
-
   .atomic {
     display: inline-block;
   }
 
   @media (min-width: 1024px) {
     .landing {
-      font-size: 5em;
+      font-size: 4.5em;
       padding-top: 20vh;
     }
   }

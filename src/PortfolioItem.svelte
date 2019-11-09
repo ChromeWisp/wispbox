@@ -26,10 +26,6 @@
     padding: 1em 0;
   }
 
-  .portfolio-item p {
-    font-size: 1.125em;
-  }
-
   .portfolio-item h1 {
     font-size: 2em;
     text-align: center;

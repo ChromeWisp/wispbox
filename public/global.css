@@ -9,3 +9,12 @@ html {
   background: var(--color-grey);
   color: var(--color-offwhite);
 }
+
+body {
+  font-size: 1.125em;
+}
+
+em {
+  color: var(--color-teal);
+  font-style: normal;
+}
