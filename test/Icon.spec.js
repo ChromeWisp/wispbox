@@ -3,6 +3,6 @@ import { render } from '@testing-library/svelte';
 
 describe('Icon', () => {
   it('renders without error', () => {
-    expect(() => render(Icon)).not.toThrow();
+    expect(() => render(Icon, { props: { icon: '' }})).not.toThrow();
   });
 });
