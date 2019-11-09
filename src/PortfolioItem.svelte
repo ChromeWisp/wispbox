@@ -5,7 +5,7 @@
     <p>Proin condimentum scelerisque nisi pulvinar pulvinar. Nunc sit amet orci non erat viverra sollicitudin.</p>
   </section>
   <figure>
-    <img src="assets/PSPMainMenu.png" alt="img" />
+    <img src="content/portfolio/pit-stop-panic/gallery/main-menu.png" alt="img" />
   </figure>
 </article>
 
