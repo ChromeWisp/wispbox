@@ -8,8 +8,9 @@
     background-color: rgba(25, 22, 34, 0.75);
     color: var(--color-offwhite);
     height: 90vh;
-    font-size: 2.75em;
+    font-size: 2.25em;
     padding: 15vh 0.5em 0;
+    margin-bottom: 1em;
   }
 
   .landing::before {
@@ -39,7 +40,7 @@
 
   @media (min-width: 1024px) {
     .landing {
-      font-size: 4.5em;
+      font-size: 4em;
       padding-top: 20vh;
     }
   }
