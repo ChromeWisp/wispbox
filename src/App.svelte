@@ -7,7 +7,6 @@
 
 <main>
   <Landing />
-  <PortfolioItem />
-  <PortfolioItem />
+  <PortfolioItem name="pit-stop-panic" />
 </main>
 <Footer />

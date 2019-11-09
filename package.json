@@ -33,6 +33,7 @@
     "transform": {
       "^.+\\.js$": "babel-jest",
       "^.+\\.svelte$": "jest-transform-svelte"
-    }
+    },
+    "setupFiles": ["./test/_jest.js"]
   }
 }

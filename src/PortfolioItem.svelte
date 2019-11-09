@@ -1,12 +1,22 @@
+<script>
+  import render from './md-renderer';
+
+  export let name;
+
+  const content = fetch(`/content/portfolio/${name}/content.md`).then(res => res.text());
+</script>
+
 <article class="portfolio-item">
-  <section>
-    <h1>Pit Stop Panic</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum erat, hendrerit nec orci sed, mollis auctor sem.</p>
-    <p>Proin condimentum scelerisque nisi pulvinar pulvinar. Nunc sit amet orci non erat viverra sollicitudin.</p>
-  </section>
-  <figure>
-    <img src="content/portfolio/pit-stop-panic/gallery/main-menu.png" alt="img" />
-  </figure>
+  {#await content}
+    <section><p>...</p></section>
+  {:then content}
+    <section>
+      {@html render(content)}
+    </section>
+    <figure>
+      <img src="content/portfolio/pit-stop-panic/gallery/main-menu.png" alt="img" />
+    </figure>
+  {/await}
 </article>
 
 <style>
@@ -26,7 +36,7 @@
     padding: 1em 0;
   }
 
-  .portfolio-item h1 {
+  .portfolio-item :global(h1) {
     font-size: 2em;
     text-align: center;
   }
@@ -50,7 +60,7 @@
       padding-right: 1em;
     }
 
-    .portfolio-item h1 {
+    .portfolio-item :global(h1) {
       font-size: 2.25em;
       text-align: left;
     }
