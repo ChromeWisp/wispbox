@@ -6,4 +6,6 @@
 
 html {
   font-family: 'Josefin Sans', sans-serif;
+  background: var(--color-grey);
+  color: var(--color-offwhite);
 }
