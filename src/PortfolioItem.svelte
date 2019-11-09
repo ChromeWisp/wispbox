@@ -15,7 +15,7 @@
     flex-direction: column-reverse;
     margin: 1em 1em 2em;
     padding-bottom: 1em;
-    border-bottom: 2px solid #333;
+    border-bottom: 0.125em solid var(--color-offgrey);
   }
 
   .portfolio-item > * {
@@ -31,8 +31,13 @@
     text-align: center;
   }
 
+  .portfolio-item figure {
+    border: 1em solid var(--color-offgrey);
+  }
+
   .portfolio-item figure img {
     width: 100%;
+    display: block;
   }
 
   @media (min-width: 1024px) {
