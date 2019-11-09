@@ -14,7 +14,7 @@
       {@html render(content)}
     </section>
     <figure>
-      <img src="content/portfolio/pit-stop-panic/gallery/main-menu.png" alt="img" />
+      <img src={`content/portfolio/${name}/gallery/image.png`} alt="img" />
     </figure>
   {/await}
 </article>
@@ -23,7 +23,7 @@
   .portfolio-item {
     display: flex;
     flex-direction: column-reverse;
-    margin: 1em 1em 2em;
+    margin: 1em 1em 3em;
     padding-bottom: 1em;
     border-bottom: 0.125em solid var(--color-offgrey);
   }

@@ -8,5 +8,6 @@
 <main>
   <Landing />
   <PortfolioItem name="pit-stop-panic" />
+  <PortfolioItem name="corridor-contact" />
 </main>
 <Footer />
