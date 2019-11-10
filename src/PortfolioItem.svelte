@@ -1,17 +1,18 @@
 <script>
   import render from './md-renderer';
+  import content from './content';
 
   export let name;
 
-  const content = fetch(`/content/portfolio/${name}/content.md`).then(res => res.text());
+  const text = content.portfolio.item(name).content()
 </script>
 
 <article class="portfolio-item">
-  {#await content}
+  {#await text}
     <section><p>...</p></section>
-  {:then content}
+  {:then text}
     <section>
-      {@html render(content)}
+      {@html render(text)}
     </section>
     <figure>
       <img src={`content/portfolio/${name}/gallery/image.png`} alt="img" />
