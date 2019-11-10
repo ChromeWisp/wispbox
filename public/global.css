@@ -19,3 +19,14 @@ em {
   color: var(--color-teal);
   font-style: normal;
 }
+
+p {
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 1024px) {
+  p { text-align: left; }
+}
