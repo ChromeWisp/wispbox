@@ -1,5 +1,6 @@
 import { Parser } from './parsing';
 import Footer from './custom/Footer';
+import Skills from './custom/Skills';
 
 const render = value => {
   if(Array.isArray(value)) {
@@ -12,5 +13,5 @@ const render = value => {
 };
 
 export default md => render(Parser
-  .withBlockRules([Footer])
+  .withBlockRules([Footer, Skills])
   .parse(md));
