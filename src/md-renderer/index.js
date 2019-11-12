@@ -1,4 +1,5 @@
-import { Parser } from './parsing'
+import { Parser } from './parsing';
+import Footer from './custom/Footer';
 
 const render = value => {
   if(Array.isArray(value)) {
@@ -8,6 +9,8 @@ const render = value => {
   } else {
     return value;
   }
-}
+};
 
-export default md => render(Parser.parse(md));
+export default md => render(Parser
+  .withBlockRules([Footer])
+  .parse(md));

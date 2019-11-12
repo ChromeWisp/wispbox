@@ -1,4 +1,4 @@
-import render from '../src/md-renderer'
+import render from '../../src/md-renderer'
 
 const md = `
 # Title
