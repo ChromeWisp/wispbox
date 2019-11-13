@@ -1,4 +1,5 @@
 export default {
+  section: name => fetch(`/content/sections/${name}.md`).then(res => res.text()),
   portfolio: {
     order: () => fetch('/content/portfolio/order.txt')
       .then(res => res.text())

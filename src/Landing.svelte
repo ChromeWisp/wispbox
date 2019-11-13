@@ -10,7 +10,6 @@
     height: 90vh;
     font-size: 2.25em;
     padding: 15vh 0.5em 0;
-    margin-bottom: 1em;
   }
 
   .landing::before {

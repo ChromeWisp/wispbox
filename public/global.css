@@ -30,3 +30,7 @@ p {
 @media (min-width: 1024px) {
   p { text-align: left; }
 }
+
+h1 {
+  font-size: 2em;
+}

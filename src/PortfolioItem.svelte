@@ -40,7 +40,6 @@
   }
 
   .portfolio-item :global(h1) {
-    font-size: 2em;
     text-align: center;
   }
 
