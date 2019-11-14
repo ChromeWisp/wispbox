@@ -1,6 +1,7 @@
 import { Parser } from './parsing';
 import Footer from './custom/Footer';
 import Skills from './custom/Skills';
+import Button from './custom/Button';
 
 const props = p => {
   if(p)
@@ -22,5 +23,5 @@ const render = value => {
 };
 
 export default md => render(Parser
-  .withBlockRules([Footer, Skills])
+  .withBlockRules([Footer, Button, Skills])
   .parse(md));

@@ -8,4 +8,6 @@ The game is now available on the Google Play Store - give it a shot and see how 
 
 @footer
 
+@button[Google Play](https://play.google.com/store/apps/details?id=com.mitchfairchild.pitstoppanic)
+
 @skills: Construct 2/3, Paint.NET

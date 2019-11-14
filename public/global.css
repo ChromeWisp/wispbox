@@ -1,5 +1,8 @@
 :root {
   --color-teal: #51d4d5;
+  --color-dark-teal: #007d7d;
+  --color-dark-teal-highlight: #009999;
+  --color-black: #000000;
   --color-grey: #444444;
   --color-offgrey: #393939;
   --color-offwhite: #f7f7f7;
@@ -33,4 +36,36 @@ p {
 
 h1 {
   font-size: 2em;
+}
+
+button, .button {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--color-dark-teal);
+  text-decoration: none;
+  color: var(--color-offwhite);
+  padding: 0.5em 1.5em;
+  line-height: 1;
+  box-shadow:
+    0.125em 0.125em rgba(255, 255, 255, 0.5) inset,
+    -0.125em -0.125em rgba(0, 0, 0, 0.5) inset,
+    0.125em 0 var(--color-black),
+    -0.125em 0 var(--color-black),
+    0 0.125em var(--color-black),
+    0 -0.125em var(--color-black);
+}
+
+button:hover, button:focus,
+.button:hover, .button:focus {
+  background: var(--color-dark-teal-highlight);
+}
+
+button:active, .button:active {
+  box-shadow:
+    -0.125em -0.125em rgba(255, 255, 255, 0.5) inset,
+    0.125em 0.125em rgba(0, 0, 0, 0.5) inset,
+    0.125em 0 var(--color-black),
+    -0.125em 0 var(--color-black),
+    0 0.125em var(--color-black),
+    0 -0.125em var(--color-black);
 }
