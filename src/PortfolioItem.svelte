@@ -24,6 +24,7 @@
   .portfolio-item {
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-start;
     margin: 1em 1em 3em;
     padding-bottom: 1em;
     border-bottom: 0.125em solid var(--color-offgrey);
@@ -54,7 +55,7 @@
 
   .portfolio-item :global(.skills-list) {
     list-style: none;
-    margin: 0;
+    margin: 0 0 0 0.5em;
     padding: 0;
     font-size: 0.875em;
     color: var(--color-teal);
@@ -77,6 +78,12 @@
     margin-right: 0;
   }
 
+  .portfolio-item :global(footer) {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+
   @media (min-width: 1024px) {
     .portfolio-item {
       flex-direction: row;
@@ -89,12 +96,6 @@
     .portfolio-item :global(h1) {
       font-size: 2.25em;
       text-align: left;
-    }
-
-    .portfolio-item :global(footer) {
-      flex: 1;
-      display: flex;
-      align-items: flex-end;
     }
   }
 </style>
