@@ -55,7 +55,7 @@
 
   .portfolio-item :global(.skills-list) {
     list-style: none;
-    margin: 0 0 0 0.5em;
+    margin: 1em 0 0 0.5em;
     padding: 0;
     font-size: 0.875em;
     color: var(--color-teal);
@@ -82,6 +82,12 @@
     flex: 1;
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: -0.25em;
+  }
+
+  .portfolio-item :global(footer .button) {
+    margin: 0.25em;
   }
 
   @media (min-width: 1024px) {
