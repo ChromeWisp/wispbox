@@ -22,7 +22,7 @@
   }
 
   .centered-section {
-    padding: 5em 2em;
+    padding: 5em 1em;
     margin: 0 1em 3em;
     border-bottom: 0.125em solid var(--color-offgrey);
   }
