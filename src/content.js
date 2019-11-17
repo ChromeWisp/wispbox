@@ -1,15 +1,17 @@
+const location = name => `/content${name}`
+const get = loc => fetch(loc).then(res => res.text())
+
 export default {
-  section: name => fetch(`/content/sections/${name}.md`).then(res => res.text()),
+  section: name => get(location(`/sections/${name}.md`)),
   about: {
-    content: () => fetch(`/content/about/content.md`).then(res => res.text()),
-    image: '/content/about/image.png'
+    content: () => get(location('/about/content.md')),
+    image: location('/about/image.png')
   },
   portfolio: {
-    order: () => fetch('/content/portfolio/order.txt')
-      .then(res => res.text())
+    order: () => get(location('/portfolio/order.txt'))
       .then(items => items.split(/\r?\n/).filter(item => item.trim().length > 0)),
     item: name => ({
-      content: () => fetch(`/content/portfolio/${name}/content.md`).then(res => res.text())
+      content: () => get(location(`/portfolio/${name}/content.md`))
     })
   }
 };
