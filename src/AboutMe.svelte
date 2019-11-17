@@ -1,4 +1,5 @@
 <script>
+  import FigImage from './FigImage.svelte'
   import content from './content'
   import render from './md-renderer'
   
@@ -14,7 +15,7 @@
       {@html render(text)}
     {/await}
   </div>
-  <figure><img class="image" src={image} alt="Brendan Phillips" /></figure>
+  <FigImage class="figure" src={image} alt="Brendan Phillips" />
 </section>
 
 <style>
@@ -32,10 +33,6 @@
     margin-bottom: 2em;
   }
 
-  .image {
-    width: 100%;
-  }
-
   @media (min-width: 1024px) {
     .about-me {
       flex-direction: row-reverse;
@@ -51,7 +48,7 @@
       flex: 2;
     }
 
-    figure {
+    .about-me :global(.figure) {
       flex: 1;
     }
   }

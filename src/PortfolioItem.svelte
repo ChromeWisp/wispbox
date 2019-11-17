@@ -1,4 +1,5 @@
 <script>
+  import FigImage from './FigImage.svelte';
   import render from './md-renderer';
   import content from './content';
 
@@ -11,12 +12,10 @@
   {#await text}
     <section><p>...</p></section>
   {:then text}
-    <section>
+    <section class="inner-item">
       {@html render(text)}
     </section>
-    <figure>
-      <img src={`content/portfolio/${name}/gallery/image.png`} alt="img" />
-    </figure>
+    <FigImage class="inner-item" src={`content/portfolio/${name}/gallery/image.png`} alt={name} />
   {/await}
 </article>
 
@@ -30,7 +29,7 @@
     border-bottom: 0.125em solid var(--color-offgrey);
   }
 
-  .portfolio-item > * {
+  .portfolio-item :global(.inner-item) {
     flex: 1;
   }
 
@@ -42,15 +41,6 @@
 
   .portfolio-item :global(h1) {
     text-align: center;
-  }
-
-  .portfolio-item figure {
-    border: 1em solid var(--color-offgrey);
-  }
-
-  .portfolio-item figure img {
-    width: 100%;
-    display: block;
   }
 
   .portfolio-item :global(.skills-list) {
