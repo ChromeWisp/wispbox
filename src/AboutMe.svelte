@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 1em;
+    margin-bottom: 3em;
   }
 
   .about-me :global(h1) {

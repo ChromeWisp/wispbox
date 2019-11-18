@@ -5,7 +5,9 @@
   --color-black: #000000;
   --color-grey: #444444;
   --color-offgrey: #393939;
+  --color-lightgrey: #555555;
   --color-offwhite: #f7f7f7;
+  --color-white: #ffffff;
 }
 
 html {
@@ -42,6 +44,9 @@ button, .button {
   display: inline-block;
   cursor: pointer;
   background: var(--color-dark-teal);
+  border: none;
+  font-size: 1em;
+  font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
   color: var(--color-offwhite);
   padding: 0.5em 1.5em;
@@ -68,4 +73,27 @@ button:active, .button:active {
     -0.125em 0 var(--color-black),
     0 0.125em var(--color-black),
     0 -0.125em var(--color-black);
+}
+
+input[type="text"], input[type="email"], textarea {
+  background: var(--color-offgrey);
+  color: var(--color-white);
+  font-size: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  padding: 0.5em;
+  box-shadow:
+    -0.125em -0.125em rgba(255, 255, 255, 0.5) inset,
+    0.125em 0.125em rgba(0, 0, 0, 0.5) inset;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  background: var(--color-lightgrey);
+  box-shadow:
+    -0.125em -0.125em rgba(255, 255, 255, 0.75) inset,
+    0.125em 0.125em rgba(0, 0, 0, 0.75) inset;
+}
+
+textarea {
+  min-height: 7em;
 }
