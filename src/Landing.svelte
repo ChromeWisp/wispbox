@@ -1,5 +1,12 @@
 <section class="landing">
   <p class="introduction">I'm <span class="atomic"><em>Brendan Phillips</em>,</span> game designer and programmer.</p>
+  <nav class="navigation">
+    <ul class="horizontal-list">
+      <li><a class="button" href="#portfolio">Portfolio</a></li>
+      <li><a class="button" href="#about">About</a></li>
+      <li><a class="button" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </section>
 
 <style>
@@ -35,6 +42,17 @@
 
   .atomic {
     display: inline-block;
+  }
+
+  .navigation {
+    font-size: 0.5em;
+  }
+
+  .horizontal-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
   }
 
   @media (min-width: 1024px) {

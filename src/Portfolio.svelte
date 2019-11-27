@@ -5,6 +5,7 @@
   const items = content.portfolio.order()
 </script>
 
+<a name="portfolio" />
 <section>
   {#await items}
     <p>Waiting...</p>

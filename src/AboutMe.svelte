@@ -7,6 +7,7 @@
   const image = content.about.image
 </script>
 
+<a name="about" />
 <section class="about-me">
   <div class="content">
     {#await text}
