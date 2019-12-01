@@ -53,6 +53,11 @@
     display: flex;
     padding: 0;
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .horizontal-list li {
+    margin: 0 0.5em 1em;
   }
 
   @media (min-width: 1024px) {
