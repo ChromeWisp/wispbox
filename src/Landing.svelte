@@ -14,7 +14,7 @@
     position: relative;
     background-color: rgba(25, 22, 34, 0.75);
     color: var(--color-offwhite);
-    height: 90vh;
+    min-height: 90vh;
     font-size: 2.25em;
     padding: 15vh 0.5em 0;
   }
