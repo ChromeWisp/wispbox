@@ -1,10 +1,14 @@
+<script>
+  import { goto, anchors } from './anchors'
+</script>
+
 <section class="landing">
   <p class="introduction">I'm <span class="atomic"><em>Brendan Phillips</em>,</span> game designer and programmer.</p>
   <nav class="navigation">
     <ul class="horizontal-list">
-      <li><a class="button" href="#portfolio">Portfolio</a></li>
-      <li><a class="button" href="#about">About</a></li>
-      <li><a class="button" href="#contact">Contact</a></li>
+      <li><button on:click={() => goto(anchors.portfolio)}>Portfolio</button></li>
+      <li><button on:click={() => goto(anchors.about)}>About</button></li>
+      <li><button on:click={() => goto(anchors.contact)}>Contact</button></li>
     </ul>
   </nav>
 </section>

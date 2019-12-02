@@ -1,14 +1,14 @@
 <script>
   import FigImage from './FigImage.svelte'
   import content from './content'
+  import { anchors } from './anchors'
   import render from './md-renderer'
   
   const text = content.about.content()
   const image = content.about.image
 </script>
 
-<a name="about" />
-<section class="about-me">
+<section id={anchors.about} class="about-me">
   <div class="content">
     {#await text}
       <p>Waiting...</p>

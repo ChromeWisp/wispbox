@@ -1,12 +1,12 @@
 <script>
   import PortfolioItem from './PortfolioItem.svelte';
-  import content from './content'
+  import content from './content';
+  import { anchors } from './anchors';
   
   const items = content.portfolio.order()
 </script>
 
-<a name="portfolio" />
-<section>
+<section id={anchors.portfolio}>
   {#await items}
     <p>Waiting...</p>
   {:then items}

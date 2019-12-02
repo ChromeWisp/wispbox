@@ -1,5 +1,8 @@
-<a name="contact" />
-<section class="contact">
+<script>
+  import { anchors } from './anchors'
+</script>
+
+<section id={anchors.contact} class="contact">
   <h1 class="title">Let's get in touch!</h1>
   <p class="info">Feel free to drop me a message! Whether it be about work, games, or just to say hi, I'd be happy to talk.</p>
   <form class="contact-form">
