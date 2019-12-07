@@ -2,7 +2,7 @@
   import Icon from './Icon.svelte';
 </script>
 
-<ul class="social">
+<ul class={`social ${$$props.class}`}>
   <li><a class="social-link" href="https://twitter.com/ChromeWisp" title="Twitter" target="_blank"><Icon icon="twitter" /></a></li>
   <li><a class="social-link" href="https://www.linkedin.com/in/phillipsbrendan/" title="LinkedIn" target="_blank"><Icon icon="linkedin" /></a></li>
 </ul>

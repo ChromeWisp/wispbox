@@ -1,5 +1,6 @@
 <script>
   import { goto, anchors } from './anchors'
+  import SocialLinks from './SocialLinks.svelte'
 </script>
 
 <section class="landing">
@@ -15,6 +16,7 @@
       <li><button on:click={() => goto(anchors.contact)}>Contact</button></li>
     </ul>
   </nav>
+  <SocialLinks class="social-section" />
 </section>
 
 <style>
@@ -24,7 +26,7 @@
     color: var(--color-offwhite);
     min-height: 100vh;
     font-size: 2.25em;
-    padding: 15vh 0.5em 0;
+    padding: 15vh 0.5em 0.5em;
     overflow: hidden;
   }
 
@@ -72,6 +74,11 @@
 
   .horizontal-list li {
     margin: 0 0.5em 1em;
+  }
+
+  .landing :global(.social-section) {
+    padding: 1.5em 0;
+    font-size: 0.333em;
   }
 
   @media (min-width: 1024px) {
