@@ -3,6 +3,10 @@
 </script>
 
 <section class="landing">
+  <video muted loop autoplay poster="assets/ribbon-street.png" class="background">
+    <source src="assets/ribbon-street.webm" type="video/webm" />
+    <source src="assets/ribbon-street.mp4" type="video/mp4" />
+  </video>
   <p class="introduction">I'm <span class="atomic"><em>Brendan Phillips</em>,</span> game designer and programmer.</p>
   <nav class="navigation">
     <ul class="horizontal-list">
@@ -18,25 +22,31 @@
     position: relative;
     background-color: rgba(25, 22, 34, 0.75);
     color: var(--color-offwhite);
-    min-height: 90vh;
+    min-height: 100vh;
     font-size: 2.25em;
     padding: 15vh 0.5em 0;
+    overflow: hidden;
   }
 
-  .landing::before {
+  .background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: url('assets/cityscape.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+    top: 50%;
+    left: 50%;
     z-index: -1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-aspect-ratio: 3/2) {
+    .background {
+      width: 100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 3/2) {
+    .background {
+      height: 100%;
+    }
   }
 
   .introduction {
