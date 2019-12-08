@@ -1,6 +1,7 @@
 <script>
   import content from './content'
   import render from './md-renderer'
+  import LoadingIcon from './LoadingIcon.svelte'
 
   export let name
 
@@ -9,7 +10,7 @@
 
 <section class="centered-section">
   {#await text}
-    <p>...</p>
+    <LoadingIcon />
   {:then text}
     {@html render(text)}
   {/await}

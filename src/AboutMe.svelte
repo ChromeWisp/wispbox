@@ -3,6 +3,7 @@
   import content from './content'
   import { anchors } from './anchors'
   import render from './md-renderer'
+  import LoadingIcon from './LoadingIcon.svelte'
   
   const text = content.about.content()
   const image = content.about.image
@@ -11,7 +12,7 @@
 <section id={anchors.about} class="about-me">
   <div class="content">
     {#await text}
-      <p>Waiting...</p>
+      <LoadingIcon />
     {:then text}
       {@html render(text)}
     {/await}

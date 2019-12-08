@@ -2,6 +2,7 @@
   import FigImage from './FigImage.svelte';
   import render from './md-renderer';
   import content from './content';
+  import LoadingIcon from './LoadingIcon.svelte';
 
   export let name;
 
@@ -10,7 +11,7 @@
 
 <article class="portfolio-item">
   {#await text}
-    <section><p>...</p></section>
+    <section><LoadingIcon /></section>
   {:then text}
     <section class="inner-item">
       {@html render(text)}
