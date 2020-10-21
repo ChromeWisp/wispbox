@@ -6,10 +6,10 @@
   <h1 class="title">Let's get in touch!</h1>
   <p class="info">Feel free to drop me a message! Whether it be about work, games, or just to say hi, I'd be happy to talk.</p>
   <form class="contact-form">
-    <label><span class="label-name required">Name</span> <input type="text" name="name" required /></label>
-    <label><span class="label-name required">Email</span> <input type="email" name="email" required /></label>
-    <label><span class="label-name">Company</span> <input type="text" name="company" /></label>
-    <label><span class="label-name required">Message</span> <textarea name="message" required></textarea></label>
+    <label><span class="label-name required">Name</span> <input type="text" name="name" placeholder="eg. Brendan Phillips" required /></label>
+    <label><span class="label-name required">Email</span> <input type="email" name="email" placeholder="eg. stickyshort@gmail.com" required /></label>
+    <label><span class="label-name">Company</span> <input type="text" name="company" placeholder="eg. WASD Corp. Inc. Ltd." /></label>
+    <label><span class="label-name required">Message</span> <textarea name="message" placeholder="eg. ??" required></textarea></label>
     <button>Send me an email!</button>
   </form>
 </section>
@@ -42,6 +42,7 @@
 
   .label-name {
     display: inline-block;
+    /* display: none; */
   }
 
   .label-name.required::after {

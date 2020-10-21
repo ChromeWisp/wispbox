@@ -48,9 +48,10 @@ h1 {
 }
 
 button, .button {
+  position: relative;
   display: inline-block;
   cursor: pointer;
-  background: var(--color-dark-teal);
+  background: rgba(0, 125, 125, 0.75);
   border: none;
   font-size: 1em;
   font-family: 'Josefin Sans', sans-serif;
@@ -58,13 +59,20 @@ button, .button {
   color: var(--color-offwhite);
   padding: 0.5em 1.5em;
   line-height: 1;
-  box-shadow:
-    0.125em 0.125em rgba(255, 255, 255, 0.5) inset,
-    -0.125em -0.125em rgba(0, 0, 0, 0.5) inset,
-    0.125em 0 var(--color-black),
-    -0.125em 0 var(--color-black),
-    0 0.125em var(--color-black),
-    0 -0.125em var(--color-black);
+  border-radius: 0.25em;
+  /* box-shadow: 0.25em 0.25em rgba(0, 125, 125, 0.5); */
+}
+
+button::after, .button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 24, 48, 0.5);
+  bottom: -0.25em;
+  right: -0.25em;
+  border-radius: 0.25em;
+  z-index: -1;
 }
 
 button:hover, button:focus,
@@ -73,34 +81,35 @@ button:hover, button:focus,
 }
 
 button:active, .button:active {
-  box-shadow:
-    -0.125em -0.125em rgba(255, 255, 255, 0.5) inset,
-    0.125em 0.125em rgba(0, 0, 0, 0.5) inset,
-    0.125em 0 var(--color-black),
-    -0.125em 0 var(--color-black),
-    0 0.125em var(--color-black),
-    0 -0.125em var(--color-black);
+  top: 0.125em;
+  left: 0.125em;
+}
+
+button:active::after, .button:active::after {
+  bottom: -0.125em;
+  right: -0.125em;
 }
 
 input[type="text"], input[type="email"], textarea {
-  background: var(--color-offgrey);
+  background: rgba(100, 100, 100, 0.5);
   color: var(--color-white);
   font-size: 1em;
   font-family: 'Josefin Sans', sans-serif;
   border: none;
   padding: 0.5em;
-  box-shadow:
-    -0.125em -0.125em rgba(255, 255, 255, 0.5) inset,
-    0.125em 0.125em rgba(0, 0, 0, 0.5) inset;
+  border-radius: 0.25em;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+  font-style: italic;
+  font-weight: 300;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-  background: var(--color-lightgrey);
-  box-shadow:
-    -0.125em -0.125em rgba(255, 255, 255, 0.75) inset,
-    0.125em 0.125em rgba(0, 0, 0, 0.75) inset;
+  background: rgba(100, 100, 100, 1);
 }
 
 textarea {
   min-height: 7em;
+  max-width: 100%;
 }
