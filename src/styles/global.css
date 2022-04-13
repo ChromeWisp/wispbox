@@ -29,3 +29,9 @@ strong {
 	font-weight: inherit;
 	color: var(--c-primary);
 }
+
+.icon {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
