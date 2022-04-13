@@ -10,11 +10,14 @@
 
 	--c-primary: hsl(180, 61%, 58%);
 	--c-text: hsl(0, 0%, 97%);
+	--c-bg: hsl(0, 0%, 27%);
+	--c-bg-dark: hsl(0, 0%, 22%);
 }
 
 body {
 	font-family: var(--font);
 	color: var(--c-text);
+	background-color: var(--c-bg);
 	padding: 0;
 }
 
