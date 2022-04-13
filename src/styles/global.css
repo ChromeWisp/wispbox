@@ -12,6 +12,10 @@
 	--c-text: hsl(0, 0%, 97%);
 	--c-bg: hsl(0, 0%, 27%);
 	--c-bg-dark: hsl(0, 0%, 22%);
+
+	--c-hologram: hsla(180, 100%, 25%, 0.5);
+	--c-hologram-hover: hsla(180, 100%, 25%, 0.75);
+	--c-hologram-active: hsla(40, 100%, 25%, 0.75);
 }
 
 body {
@@ -34,4 +38,21 @@ strong {
 	width: 1em;
 	height: 1em;
 	fill: currentColor;
+}
+
+a.as-button {
+	display: inline-block;
+	background-color: var(--c-hologram);
+	color: var(--c-text);
+	text-decoration: none;
+	border-radius: 0.25em;
+	padding: 0.5em 1.5em;
+}
+
+a.as-button:hover, a.as-button:focus {
+	background-color: var(--c-hologram-hover);
+}
+
+a.as-button:active {
+	background-color: var(--c-hologram-active);
 }
