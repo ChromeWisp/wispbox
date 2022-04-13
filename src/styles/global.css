@@ -4,6 +4,8 @@
 }
 
 :root {
+	--container-width: 75rem;
+
 	--font: 'Josefin Sans', -apple-system, 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
 	--font-wt-light: 300;
 	--font-wt-reg: 400;
@@ -30,6 +32,15 @@ h1 {
 	font-weight: var(--font-wt-light);
 	font-size: 2em;
 	font-size: clamp(1.75em, 4.667vw, 2.25em);
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 1.75em;
+	line-height: 1.5;
+}
+
+p {
 	line-height: 1.5;
 }
 
