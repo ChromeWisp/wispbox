@@ -1,0 +1,36 @@
+<section class="landing">
+    <video class="background" muted loop autoplay poster="/assets/ribbon-street.png" aria-hidden="true">
+        <source src="/assets/ribbon-street.webm" type="video/webm" />
+        <source src="/assets/ribbon-street.mp4" type="video/mp4" />
+    </video>
+    <h1>I'm <strong>Brendan Phillips</strong>, game designer and programmer.</h1>
+</section>
+
+<style>
+    .landing {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    @media (min-aspect-ratio: 3/2) {
+        .background {
+            width: 100%;
+        }
+    }
+
+    @media (max-aspect-ratio: 3/2) {
+        .background {
+            height: 100%;
+        }
+    }
+</style>
