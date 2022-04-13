@@ -1,11 +1,16 @@
 ---
-import Twitter from './icons/Twitter.astro'
-import LinkedIn from './icons/LinkedIn.astro'
+import { socials } from '../content/socials'
 ---
 
 <ul class="socials">
-    <li><a class="social-link" href="https://twitter.com/ChromeWisp" title="Twitter" target="_blank"><Twitter /></a></li>
-    <li><a class="social-link" href="https://www.linkedin.com/in/phillipsbrendan/" title="LinkedIn" target="_blank"><LinkedIn /></a></li>
+    {socials.map(social => (
+        <li><a class="social-link" href={social.link} title={social.name} target="_blank">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox={social.viewBox}>
+                <title>{social.name}</title>
+                <path d={social.iconPath} />
+            </svg>
+        </a></li>
+    ))}
 </ul>
 
 <style>
