@@ -13,9 +13,9 @@
 	--c-bg: hsl(0, 0%, 27%);
 	--c-bg-dark: hsl(0, 0%, 22%);
 
-	--c-hologram: hsla(180, 100%, 25%, 0.5);
-	--c-hologram-hover: hsla(180, 100%, 25%, 0.75);
-	--c-hologram-active: hsla(40, 100%, 25%, 0.75);
+	--c-hologram: hsla(180, 100%, 25%, 0.667);
+	--c-hologram-hover: hsla(180, 100%, 25%, 0.875);
+	--c-hologram-active: hsla(40, 100%, 25%, 0.875);
 }
 
 body {
@@ -28,6 +28,9 @@ body {
 
 h1 {
 	font-weight: var(--font-wt-light);
+	font-size: 2em;
+	font-size: clamp(1.75em, 4.667vw, 2.25em);
+	line-height: 1.5;
 }
 
 strong {

@@ -16,8 +16,19 @@ const Title = (await Astro.glob('../content/landing/title.md'))[0]
 <style>
     .landing {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3em;
         background-color: hsla(255, 21%, 11%, 0.75);
         min-height: 100vh;
         overflow: hidden;
+        font-size: 1.5em;
+        padding: 15vh clamp(0.5em, 1.333vw, 1em);
+    }
+
+    .landing :global(strong) {
+        display: inline-block;
     }
 </style>
