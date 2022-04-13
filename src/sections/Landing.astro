@@ -1,13 +1,14 @@
 ---
-import RibbonStreetBackground from '../../components/RibbonStreetBackground.astro'
-import Title from './Title.astro'
-import Navigation from '../../components/Navigation.astro'
-import Socials from '../../components/Socials.astro'
+import RibbonStreetBackground from '../components/RibbonStreetBackground.astro'
+import Navigation from '../components/Navigation.astro'
+import Socials from '../components/Socials.astro'
+
+const Title = (await Astro.glob('../content/landing/title.md'))[0]
 ---
 
 <section class="landing">
     <RibbonStreetBackground />
-    <Title />
+    <Title.Content />
     <Navigation />
     <Socials />
 </section>
