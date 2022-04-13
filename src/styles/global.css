@@ -20,6 +20,7 @@
 
 body {
 	font-family: var(--font);
+	font-size: clamp(1rem, 2.667vw, 1.25rem);
 	color: var(--c-text);
 	background-color: var(--c-bg);
 	padding: 0;
