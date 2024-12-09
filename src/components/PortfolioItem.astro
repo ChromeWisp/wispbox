@@ -1,0 +1,16 @@
+---
+export interface Props {
+    item: MarkdownInstance<{
+        title: string,
+        action: string,
+        tech: string[],
+    }>
+}
+
+const { item } = Astro.props
+---
+
+<article>
+    <h3>{item.frontmatter.title}</h3>
+    <item.Content />
+</article>

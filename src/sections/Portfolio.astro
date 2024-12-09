@@ -1,0 +1,11 @@
+---
+import PortfolioItem from '../components/PortfolioItem.astro'
+
+const items = await Astro.glob('../content/portfolio/pit-stop-panic/content.md')
+---
+
+<section id="portfolio">
+    {items.map(item => (
+        <PortfolioItem item={item} />
+    ))}
+</section>
